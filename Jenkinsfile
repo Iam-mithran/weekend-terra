@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: "${env.BRANCH_NAME}", url: 'https://github.com/Iam-mithran/weekend-terra.git'
+        git branch: "${env.BRANCH_NAME}", credentialsId: 'github-cred', url: 'https://github.com/Iam-mithran/weekend-terra.git'
       }
     }
 
