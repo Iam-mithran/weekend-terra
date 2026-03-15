@@ -6,6 +6,7 @@ module vpc {
   env = "dev"
 }
 
+# Dummy line
 module ec2 {
   source = "../../modules/ec2"
   ami_id  = "ami-0f559c3642608c138"
